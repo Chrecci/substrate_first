@@ -6,24 +6,37 @@ A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacki
 
 ## To Run
 
-Must need node version > 14.10.0
+Make sure you are using Linux, or if on Windows, using WSL (Windows Subserver Linux)
+
+Install and use node version > 14.10.0
 
 ```
 nvm install 16.14.0
 nvm use 16.14.0
 ```
 
-In root of repository:
+In root of repository start chain in dev mode:
 ```
 ./target/release/node-template --dev
 ```
 
 Start front-end template
 ```
-cd substrate-front-end-template
+cd substrate_front_end_template
 yarn install
 yarn start
 ```
+Interactable front end should be accessible at http://localhost:8000/substrate-front-end-template  
+
+## Trouble-Shooting
+
+If you're having a lot of dependency errors, make sure to update all Cargo.toml and Cargo.lock files from here: https://github.com/substrate-developer-hub/substrate-node-template
+
+Clear cache:
+```
+cargo cache -a
+```
+
 ## Getting Started
 
 Follow the steps below to get started with the Node Template, or get it up and running right from
