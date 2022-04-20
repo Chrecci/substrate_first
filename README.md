@@ -15,6 +15,11 @@ nvm install 16.14.0
 nvm use 16.14.0
 ```
 
+Build
+```
+cargo build --release
+```
+
 In root of repository start chain in dev mode:
 ```
 ./target/release/node-template --dev
@@ -36,6 +41,16 @@ Clear cache:
 ```
 cargo cache -a
 ```
+
+Build Errors (Ubuntu):
+```
+sudo apt update
+sudo apt-get install libjemalloc-dev
+sudo apt install -y git clang curl libssl-dev llvm libudev-dev
+sudo apt install build-essential
+
+```
+
 
 ## Getting Started
 
